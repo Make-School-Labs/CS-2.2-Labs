@@ -47,8 +47,8 @@ class Graph:
     """
     def __init__(self):
         """Initialize a graph object with an empty dictionary."""
-        self.vertList = {}
-        self.numVertices = 0
+        self.vert_list = {}
+        self.num_vertices = 0
 
     def add_vertex(self, key):
         """Add a new vertex object to the graph with the given key and return the vertex."""
@@ -68,15 +68,15 @@ class Graph:
         # TODO if both vertices in the graph, add the
         # edge by making key1 a neighbor of key2
         # and using the addNeighbor method of the Vertex class.
-        # Hint: the vertex corresponding to key1 is stored in self.vertList[key1].
+        # Hint: the vertex corresponding to key1 is stored in self.vert_list[key1].
 
     def get_vertices(self):
         """return all the vertices in the graph"""
-        return self.vertList.keys()
+        return self.vert_list.keys()
 
     def __iter__(self):
         """Iterate over the vertex objects in the graph, to use sytax: for v in g"""
-        return iter(self.vertList.values())
+        return iter(self.vert_list.values())
 
 
 # Driver code
