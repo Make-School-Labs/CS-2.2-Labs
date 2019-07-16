@@ -105,4 +105,4 @@ if __name__ == "__main__":
     print("The edges are: ")
     for v in g:
         for w in v.get_neighbors():
-            print(f"( {v.getId()} , {w.getId()} )")
+            print(f"( {v.get_id()} , {w.get_id()} )")
