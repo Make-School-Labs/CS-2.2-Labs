@@ -1,11 +1,9 @@
 #!python
 
-""" Vertex Class
-A helper class for the Graph class that defines vertices and vertex neighbors.
-"""
-
-
 class Vertex(object):
+    """ Vertex Class
+    A helper class for the Graph class that defines vertices and vertex neighbors.
+    """
 
     def __init__(self, vertex):
         """Initialize a vertex and its neighbors.
@@ -17,14 +15,14 @@ class Vertex(object):
         self.id = vertex
         self.neighbors = {}
 
-    def add_neighbor(self, vertex, weight=0):
+    def add_neighbor(self, vertex, weight=1):
         """Add a neighbor along a weighted edge."""
-        # TODO check if vertex is already a neighbot
+        # TODO check if vertex is already a neighbor
         # TODO if not, add vertex to neighbors and assign weight.
 
     def __str__(self):
         """Output the list of neighbors of this vertex."""
-        return f'{self.id} adjacent to {[x.id for x in self.neighbors]}'
+        return f"{self.id} adjacent to {[x.id for x in self.neighbors]}"
 
     def get_neighbors(self):
         """Return the neighbors of this vertex."""
@@ -40,13 +38,13 @@ class Vertex(object):
         # vertex to the given vertex.
 
 
-""" Graph Class
-A class demonstrating the essential
-facts and functionalities of graphs.
-"""
 
 
 class Graph:
+    """ Graph Class
+    A class demonstrating the essential
+    facts and functionalities of graphs.
+    """
     def __init__(self):
         """Initialize a graph object with an empty dictionary."""
         self.vertList = {}
@@ -70,7 +68,7 @@ class Graph:
         # TODO if both vertices in the graph, add the
         # edge by making key1 a neighbor of key2
         # and using the addNeighbor method of the Vertex class.
-        # Hint: the vertex key1 is stored in self.vertList[f].
+        # Hint: the vertex corresponding to key1 is stored in self.vertList[key1].
 
     def get_vertices(self):
         """return all the vertices in the graph"""
@@ -82,8 +80,6 @@ class Graph:
 
 
 # Driver code
-
-
 if __name__ == "__main__":
 
     # Challenge 1: Create the graph
@@ -103,10 +99,10 @@ if __name__ == "__main__":
 
     # Challenge 1: Output the vertices & edges
     # Print vertices
-    print("The vertices are: ", g.get_vertices(), "\n")
+    print(f"The vertices are: {g.get_vertices()} \n")
 
     # Print edges
     print("The edges are: ")
     for v in g:
         for w in v.get_neighbors():
-            print("( %s , %s )" % (v.getId(), w.getId()))
+            print(f"( {v.getId()} , {w.getId()} )")
