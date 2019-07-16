@@ -38,8 +38,6 @@ class Vertex(object):
         # vertex to the given vertex.
 
 
-
-
 class Graph:
     """ Graph Class
     A class demonstrating the essential
@@ -61,7 +59,7 @@ class Graph:
         """Return the vertex if it exists"""
         # TODO return the vertex if it is in the graph
 
-    def add_edge(self, key1, key2, weight=0):
+    def add_edge(self, key1, key2, weight=1):
         """add an edge from vertex with key `key1` to vertex with key `key2` with a weight."""
         # TODO if either vertex is not in the graph,
         # add it - or return an error (choice is up to you).
