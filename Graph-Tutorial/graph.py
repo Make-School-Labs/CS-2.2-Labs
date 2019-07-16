@@ -5,14 +5,14 @@ class Vertex(object):
     A helper class for the Graph class that defines vertices and vertex neighbors.
     """
 
-    def __init__(self, vertex):
+    def __init__(self, vertex_id):
         """Initialize a vertex and its neighbors.
 
         neighbors: set of vertices adjacent to self,
         stored in a dictionary with key = vertex,
         value = weight of edge between self and neighbor.
         """
-        self.id = vertex
+        self.id = vertex_id
         self.neighbors = {}
 
     def add_neighbor(self, vertex, weight=1):
