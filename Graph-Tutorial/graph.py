@@ -67,7 +67,7 @@ class Graph:
         # add it - or return an error (choice is up to you).
         # TODO if both vertices in the graph, add the
         # edge by making key1 a neighbor of key2
-        # and using the addNeighbor method of the Vertex class.
+        # and using the add_neighbor method of the Vertex class.
         # Hint: the vertex corresponding to key1 is stored in self.vert_list[key1].
 
     def get_vertices(self):
