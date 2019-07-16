@@ -2,7 +2,8 @@
 
 class Vertex(object):
     """ Vertex Class
-    A helper class for the Graph class that defines vertices and vertex neighbors.
+    A helper class for the Graph class that defines vertices and vertex
+    neighbors.
     """
 
     def __init__(self, vertex_id):
@@ -49,7 +50,8 @@ class Graph:
         self.num_vertices = 0
 
     def add_vertex(self, key):
-        """Add a new vertex object to the graph with the given key and return the vertex."""
+        """Add a new vertex object to the graph with the given key and return
+        the vertex."""
         # TODO increment the number of vertices
         # TODO create a new vertex
         # TODO add the new vertex to the vertex list
@@ -60,20 +62,23 @@ class Graph:
         # TODO return the vertex if it is in the graph
 
     def add_edge(self, key1, key2, weight=1):
-        """add an edge from vertex with key `key1` to vertex with key `key2` with a weight."""
+        """Add an edge from vertex with key `key1` to vertex with key `key2`
+        with a weight."""
         # TODO if either vertex is not in the graph,
         # add it - or return an error (choice is up to you).
         # TODO if both vertices in the graph, add the
         # edge by making key1 a neighbor of key2
         # and using the add_neighbor method of the Vertex class.
-        # Hint: the vertex corresponding to key1 is stored in self.vert_list[key1].
+        # Hint: the vertex corresponding to key1 is stored in 
+        # self.vert_list[key1].
 
     def get_vertices(self):
-        """return all the vertices in the graph"""
+        """Return all the vertices in the graph"""
         return self.vert_list.keys()
 
     def __iter__(self):
-        """Iterate over the vertex objects in the graph, to use sytax: for v in g"""
+        """Iterate over the vertex objects in the graph, to use sytax:
+        for v in g"""
         return iter(self.vert_list.values())
 
 
