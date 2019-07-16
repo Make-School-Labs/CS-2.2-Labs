@@ -41,8 +41,7 @@ class Vertex(object):
 
 class Graph:
     """ Graph Class
-    A class demonstrating the essential
-    facts and functionalities of graphs.
+    A class demonstrating the essential facts and functionalities of graphs.
     """
     def __init__(self):
         """Initialize a graph object with an empty dictionary."""
